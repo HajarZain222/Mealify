@@ -60,6 +60,27 @@ a {
     text-decoration: none;
     color: inherit;
 }
+
+@supports (scrollbar-color: auto) {
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #1F1F1F #DFDFDF;
+    }
+}
+
+*::-webkit-scrollbar {
+    width: 15px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #DFDFDF;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #1F1F1F;
+    border-radius: 4px;
+}
+
 /* End Global Rules */
 
 /* Start  */
